@@ -2,16 +2,14 @@
 
 A Flutter project for number guessing
 
-## Getting Started
+This is the app is a game, that makes user guess a number and it gives hints to get closer.
+Perks:
+* user can add digits only, paste proof
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
-"# NumberGuesser" 
+Here are some screenshots:
+<p float="left">
+  <img src="/screenShot_1.png" width="200" />
+  <img src="/screenShot_2.png" width="200" /> 
+  <img src="/screenShot_3.png" width="200" />
+  <img src="/screenShot_4.png" width="200" />
+</p>
