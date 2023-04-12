@@ -40,27 +40,26 @@ class _MyHomePageState extends State<MyHomePage> {
 
   void showAlertBox() {
     showDialog(
-      context: context,
-      builder: (BuildContext context) {
-        return AlertDialog(
-            title: const Text('You guessed right!'),
-            // Trims all unnecessary zeros from end
-            content: Text('It was ${_txtController.text}.'),
-            actions: <Widget>[
-              TextButton(
-                  onPressed: () {
-                    Navigator.of(context).push(MaterialPageRoute(
-                        builder: (BuildContext context) => const MyHomePage(title: 'Number Guesser App')));
-                  },
-                  child: const Text('Try again!', style: TextStyle(color: Colors.pink))),
-              TextButton(
-                  onPressed: () {
-                    Navigator.of(context).pop();
-                  },
-                  child: const Text('OK', style: TextStyle(color: Colors.pink)))
-            ]);
-      }
-    );
+        context: context,
+        builder: (BuildContext context) {
+          return AlertDialog(
+              title: const Text('You guessed right!'),
+              // Trims all unnecessary zeros from end
+              content: Text('It was ${_txtController.text}.'),
+              actions: <Widget>[
+                TextButton(
+                    onPressed: () {
+                      Navigator.of(context).push(MaterialPageRoute(
+                          builder: (BuildContext context) => const MyHomePage(title: 'Number Guesser App')));
+                    },
+                    child: const Text('Try again!', style: TextStyle(color: Colors.pink))),
+                TextButton(
+                    onPressed: () {
+                      Navigator.of(context).pop();
+                    },
+                    child: const Text('OK', style: TextStyle(color: Colors.pink)))
+              ]);
+        });
   }
 
   @override
