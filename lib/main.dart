@@ -15,6 +15,6 @@ class MyApp extends StatelessWidget {
         theme: ThemeData(
           primarySwatch: Colors.pink,
         ),
-        home: const MyHomePage(title: 'Number Shaper App'));
+        home: const MyHomePage(title: 'Number Guesser App'));
   }
 }
