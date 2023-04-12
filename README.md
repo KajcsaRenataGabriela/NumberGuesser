@@ -12,4 +12,5 @@ Here are some screenshots:
   <img src="/screenShot_2.png" width="200" /> 
   <img src="/screenShot_3.png" width="200" />
   <img src="/screenShot_4.png" width="200" />
+  <img src="/screenShot_5.png" width="200" />
 </p>
