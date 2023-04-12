@@ -124,13 +124,15 @@ class _MyHomePageState extends State<MyHomePage> {
                             style: const TextStyle(fontSize: 20.0, color: Colors.pink)),
                         onPressed: () {
                           setState(() {});
+                          // Verify if form is not empty
                           if (!_formKey.currentState!.validate()) {
+                            // Use reset implementation in case user has won
                             if (_hasWon) {
                               Navigator.of(context).push(MaterialPageRoute(
                                   builder: (BuildContext context) => const MyHomePage(title: 'Number Guesser App')));
                             } else {
                               _text = _txtController.text;
-                              final int inputNumber = int.parse(_txtController.text);
+                              final int inputNumber = int.parse(_text);
                               if (inputNumber == _numberToBeGuessed) {
                                 _hintText = 'You won!';
                                 showAlertBox();
